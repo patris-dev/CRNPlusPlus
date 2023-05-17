@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Types.fs" />
+        <Compile Include="SemanticAnalyzer.fsi" />
+        <Compile Include="SemanticAnalyzer.fs" />
+        <Compile Include="Parser.fsi" />
+        <Compile Include="Parser.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FParsec" Version="1.1.1" />
+      <PackageReference Update="FSharp.Core" Version="6.0.5" />
+    </ItemGroup>
+
+</Project>

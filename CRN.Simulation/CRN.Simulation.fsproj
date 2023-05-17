@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="DiscreteSimulator.fsi" />
+        <Compile Include="DiscreteSimulator.fs" />
+        <Compile Include="ReactionSimulator.fsi" />
+        <Compile Include="ReactionSimulator.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CRN.Core\CRN.Core.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="FSharp.Core" Version="6.0.5" />
+    </ItemGroup>
+
+</Project>

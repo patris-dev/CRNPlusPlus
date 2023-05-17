@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>CRN</RootNamespace>
+        <Company>Johannes Mols and Patrikas Balsys</Company>
+        <Product>CRN++ Parser and Simulator</Product>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Authors>Johannes Mols and Patrikas Balsys</Authors>
+        <AssemblyName>CRNPP</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CRN.Core\CRN.Core.fsproj" />
+      <ProjectReference Include="..\CRN.Draw\CRN.Draw.fsproj" />
+      <ProjectReference Include="..\CRN.Simulation\CRN.Simulation.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="FSharp.Core" Version="6.0.5" />
+      <PackageReference Include="CommandLineParser.FSharp" Version="2.9.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Scripts\**" />
+    </ItemGroup>
+
+</Project>
